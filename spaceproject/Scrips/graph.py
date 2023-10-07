@@ -13,7 +13,7 @@ numbers = []
 
 pattern = r'(\d{4})'
 
-for filename in os.lisdir(current_dir):
+for filename in os.listdir(current_dir):
     if filename.endswith('.txt') and 'Table 3.1' in filename:
         file_path = os.path.join(current_dir, filename)
         with open(file_path, 'r') as file:
@@ -37,11 +37,11 @@ fig.add_trace(trace)
 
 first_num = sorted_numbers[0]
 
-xasis_range = [sorted_file_names[0], sorted_file_names[-1]]
+xaxis_range = [sorted_file_names[0], sorted_file_names[-1]]
 
-fio.update_layout(
+fig.update_layout(
     title=f'Title',
-    yaxis=dict(title='File Names', range=xaxis_range),
+    xaxis=dict(title='File Names', range=xaxis_range),
     yaxis=dict(title=f'Y-Axis Values (First Number: {first_num})', range = [0, 35000])
 )
 

@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="with=device-width, inital-scale=1.0">
         <title> About Us | Voyager Visionaries</title>
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="{% static 'style2.css' %}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -11,11 +13,11 @@
     <body>
         <section class="secondheader">
             <nav>
-                <a href="index.html"><img src="images/logo.png"></a>
+                <a href=""><img src="{% static 'images/logo.png' %}"></a>
                 <div class="second-nav-links">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="aboutus.html"> About</a></li>
+                        <li><a href="{% url 'Home' %}">Home</a></li>
+                        <li><a href=""> About</a></li>
                     </ul>
                 </div>
 
@@ -30,7 +32,7 @@
         </section>
         <section class="para">
             <div class="left">
-                <img src="images/placeholder/street_lighting_lights_134856_1920x1080.jpg">
+                <img src="{% static 'images/placeholder/street_lighting_lights_134856_1920x1080.jpg' %}">
             </div>
             <h1>Header 1</h1>
             <p>Nullam sit amet quam quis tellus pharetra maximus eu fermentum diam. Etiam ornare quam ante, a feugiat magna venenatis at. Mauris volutpat quam lobortis lobortis laoreet. Quisque sagittis libero magna, sit amet condimentum arcu hendrerit in. Vivamus eu lectus id ligula consequat dictum sed non risus. Sed pellentesque nunc quis bibendum tempor. Donec ultricies libero tellus, non pellentesque leo euismod sed.</p>
@@ -40,7 +42,7 @@
 
         <section class="para">
             <div class="right">
-                <img src="images/placeholder/street_night_wet_155637_1920x1080.jpg">
+                <img src="{% static 'images/placeholder/street_night_wet_155637_1920x1080.jpg' %}">
             </div>
             <h1>Header 2</h1>
             <p>Nullam sit amet quam quis tellus pharetra maximus eu fermentum diam. Etiam ornare quam ante, a feugiat magna venenatis at. Mauris volutpat quam lobortis lobortis laoreet. Quisque sagittis libero magna, sit amet condimentum arcu hendrerit in. Vivamus eu lectus id ligula consequat dictum sed non risus. Sed pellentesque nunc quis bibendum tempor. Donec ultricies libero tellus, non pellentesque leo euismod sed.</p>
