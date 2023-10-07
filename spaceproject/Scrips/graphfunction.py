@@ -4,16 +4,17 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 import plotly.io as pio
 import webbrowser
-from extractor import word_list
 
 current_dir = os.getcwd()
 
-def makegraph(word):
+def makegraph(word, name):
     file_names = []
     values = []
     numbers = []
 
     pattern = r'(\d{4})'
+
+    max_y_value = 0
 
     for filename in os.listdir(current_dir):
         # change the name of the 'Table 3...' to extract a new table
@@ -23,6 +24,9 @@ def makegraph(word):
                 lines = file.readlines()
                 last_line = lines[-1].strip()
                 last_column_value = float(last_line.split()[-1])
+
+                if last_column_value > max_y_value:
+                    max_y_value = round(last_column_value *1.2, -3)
 
                 extracted_num = re.findall(pattern, filename)
 
@@ -41,9 +45,9 @@ def makegraph(word):
     xaxis_range = [name[:4] for name in sorted_file_names]
 
     fig.update_layout(
-        title=f'Number of objects orbiting Earth',
+        title=name,
         xaxis=dict(title='Years', tickvals=sorted_file_names, ticktext=xaxis_range),
-        yaxis=dict(title='Number of objects orbiting Earth', range = [0, 35000])
+        yaxis=dict(title=name, range = [0, max_y_value])
     )
 
     html_file_path = 'line_graph'+ word + '.html'
@@ -51,7 +55,10 @@ def makegraph(word):
 
     webbrowser.open(html_file_path)
 
+word_list = ['Table 3.1:','Table 3.3:','Table 3.5:']
+name_list = ['Number of objects orbiting Earth','Mass in tons orbiting Earth','Area in m2 orbiting Earth']
+
 for word in word_list:
-    makegraph(word)
+    makegraph(word, name_list[word_list.index(word)])
 
 
