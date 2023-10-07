@@ -122,5 +122,172 @@ nav img{
 }
 
 .infobutton:hover::before {
-    
+    transform: scaleX(1);
+    background-position: 100% 0;
+}
+
+
+
+.intro {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/banner2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.intro-text-box {
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%);
+    text-align: left;
+}
+
+.intro-text-box h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.intro-text-box p {
+    margin: 10px 0 30px;
+    font-weight: 300;
+    line-height: 22px;
+    font-size: 16px;
+    color: #ffff;
+}
+
+.access {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/banner3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.access-text-box {
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%);
+    text-align: right;
+}
+
+.access-text-box h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.access-text-box p {
+    margin: 10px 0 30px;
+    font-weight: 300;
+    line-height: 22px;
+    font-size: 16px;
+    color: #ffff;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #000;
+}
+
+.footer h3 {
+    color: #ffff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.footer p {
+    color: #ffff;
+}
+
+.ViewDataBottom {
+    display: inline-block;
+    padding: 12px 34px;
+    border: 1px solid #ffff;
+    position: relative;
+    text-align: center;
+    color: #ffff;
+    text-decoration: none;
+    background: transparent;
+    overflow: hidden;
+    transition: background 0.2s;
+    font-size: 13px;
+}
+
+.ViewDataBottom::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, #dc2424, #4a569d);
+    background-clip: content-box;
+    z-index: -1;
+    transition: all 1s;
+    transform: scaleX(0);
+    background-position: -100% 0;
+}
+
+.ViewDataBottom:hover {
+    background: transparent;
+    overflow: visible;
+}
+
+.ViewDataBottom:hover::before {
+    transform: scaleX(1);
+    background-position: 100% 0;
+}
+
+.accesssourcebutton {
+    display: inline-block;
+    padding: 12px 34px;
+    border: 1px solid #ffff;
+    position: relative;
+    text-align: center;
+    color: #ffff;
+    text-decoration: none;
+    background: transparent;
+    overflow: hidden;
+    transition: background 0.2s;
+    font-size: 13px;
+}
+
+.accesssourcebutton::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, #dc2424, #4a569d);
+    background-clip: content-box;
+    z-index: -1;
+    transition: all 1s;
+    transform: scaleX(0);
+    background-position: -100% 0;
+}
+
+.accesssourcebutton:hover {
+    background: transparent;
+    overflow: visible;
+}
+
+.accesssourcebutton:hover::before {
+    transform: scaleX(1);
+    background-position: 100% 0;
 }
