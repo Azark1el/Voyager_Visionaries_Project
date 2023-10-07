@@ -14,6 +14,7 @@ numbers = []
 pattern = r'(\d{4})'
 
 for filename in os.listdir(current_dir):
+    # change the name of the 'Table 3...' to extract a new table
     if filename.endswith('.txt') and 'Table 3.1' in filename:
         file_path = os.path.join(current_dir, filename)
         with open(file_path, 'r') as file:
@@ -35,14 +36,12 @@ fig = make_subplots()
 trace = go.Scatter(x=sorted_file_names, y=sorted_values, mode = 'lines+markers')
 fig.add_trace(trace)
 
-first_num = sorted_numbers[0]
-
-xaxis_range = [sorted_file_names[0], sorted_file_names[-1]]
+xaxis_range = [name[:4] for name in sorted_file_names]
 
 fig.update_layout(
-    title=f'Title',
-    xaxis=dict(title='File Names', range=xaxis_range),
-    yaxis=dict(title=f'Y-Axis Values (First Number: {first_num})', range = [0, 35000])
+    title=f'Number of objects orbiting Earth',
+    xaxis=dict(title='Years', tickvals=sorted_file_names, ticktext=xaxis_range),
+    yaxis=dict(title='Number of objects orbiting Earth', range = [0, 35000])
 )
 
 html_file_path = 'line_graph.html'

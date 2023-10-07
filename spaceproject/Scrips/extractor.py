@@ -99,6 +99,8 @@ datepattern = r'\d{1,2}(?:st|nd|rd|th)?\s(?:January|February|March|April|May|Jun
 
 prefix = 'https://www.sdo.esoc.esa.int/publications/Space_Environment_Report'
 
+word_list = ['Table 3.1:','Table 3.3:','Table 3.5:']
+
 response = requests.get(url)
 
 soup = BeautifulSoup(response.text, 'html.parser')
@@ -114,8 +116,6 @@ pdf_links.append('https://www.sdo.esoc.esa.int/environment_report/Space_Environm
 
 for link in pdf_links:
     ssl_context = ssl.create_default_context(cafile=certifi.where())
-
-    word_list = ['Table 3.1:','Table 3.3:','Table 3.5:']
 
     dates = date_extractor(link, datepattern)
 
