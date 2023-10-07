@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="with=device-width, inital-scale=1.0">
         <title> Home | Voyager Visionaries</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fnts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -11,11 +13,11 @@
     <body>
         <section class="header">
             <nav>
-                <a href=""><img src="images/logo.png"</a>
+                <a href=""><img src="{% static 'images/logo.png' %}"</a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="">Hme</a></li>
-                        <li><a href="about"> ABOUT</a></li>
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="about"> About</a></li>
                     </ul>
                 </div>
             </nav>
@@ -25,7 +27,7 @@
             <p>
                 No longer need to read long technical documents because you have already got everything you need need right here
             </p>
-            <a href="seemore" class="infobutton">See more</a>
+            <a href="More" class="infobutton">See more</a>
         </div>
 
         </section>
@@ -38,7 +40,7 @@
         <p>
             Write something here
         </p>
-        <a href="seedata" class="ViewDataButton">See Today Data</a>
+        <a href="Data" class="ViewDataButton">See Today Data</a>
     </div>
 </section>
 
@@ -49,7 +51,7 @@
         <p>
             Write some intro here
         </p>
-        <a href="explore" class="accesssourcebutton">Explore</a>
+        <a href="Explore" class="accesssourcebutton">Explore</a>
     </div>
 </section>
 
