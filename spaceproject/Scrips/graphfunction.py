@@ -4,6 +4,7 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 import plotly.io as pio
 import webbrowser
+from extractor import name_list
 
 current_dir = os.getcwd()
 
@@ -55,10 +56,9 @@ def makegraph(word, name):
 
     webbrowser.open(html_file_path)
 
-word_list = ['Table 3.1:','Table 3.3:','Table 3.5:']
-name_list = ['Number of objects orbiting Earth','Mass in tons orbiting Earth','Area in m2 orbiting Earth']
+title_list = ['Number of objects orbiting Earth','Mass in tons orbiting Earth','Area in m2 orbiting Earth']
 
-for word in word_list:
-    makegraph(word, name_list[word_list.index(word)])
+for name in name_list:
+    makegraph(name, title_list[name_list.index(name)])
 
 

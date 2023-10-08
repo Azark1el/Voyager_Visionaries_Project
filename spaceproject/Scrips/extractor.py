@@ -100,6 +100,7 @@ datepattern = r'\d{1,2}(?:st|nd|rd|th)?\s(?:January|February|March|April|May|Jun
 prefix = 'https://www.sdo.esoc.esa.int/publications/Space_Environment_Report'
 
 word_list = ['Table 3.1:','Table 3.3:','Table 3.5:']
+name_list = ['Table3_1','Table3_3','Table3_5']
 
 response = requests.get(url)
 
@@ -139,7 +140,7 @@ for link in pdf_links:
 
     for page in pages:
         extracted_num = table_extractor(local_pdf_path, page)
-        text_file_path = str(year) + word_list[pages.index(page)] + '.txt'
+        text_file_path = str(year) + name_list[pages.index(page)] + '.txt'
 
         rowdata = [extracted_num[i:i+10] for i in range(0, len(extracted_num), 10)]
 
