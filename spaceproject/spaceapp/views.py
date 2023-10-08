@@ -11,7 +11,7 @@ def more(request):
 def data(request):
     return render(request, 'data.html')
 def explore(request):
-    return render(request, 'explore.html')
+    return render(request, 'source.html')
 def debris(request):
     return render(request, 'spacedebris.html')
 #redirect functions
