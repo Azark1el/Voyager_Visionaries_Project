@@ -87,9 +87,12 @@ nav img{
 }
 
 .row {
-    margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .intro {
