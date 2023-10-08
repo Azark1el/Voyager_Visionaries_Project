@@ -11,6 +11,6 @@ urlpatterns = [
 
     # redirect
 
-    path('Home/', views.home, name='Home'),
+    path('Home/', views.home_rdr, name='Home'),
     path('About/', views.about_rdr, name='About')
 ]
