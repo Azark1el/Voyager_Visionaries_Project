@@ -60,3 +60,30 @@ a.active,a:hover{
         padding-left: 50px;
     }
 }
+
+.thirdheader{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/anotherbanner.png);
+    background-position: left;
+    background-size: cover;
+    position: relative;
+}
+
+.header-text-box{
+    color: #ffff;
+    margin: 50px;
+    width: 400px;
+}
+
+.header-text-box h1{
+    font-size: 48px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.header-text-box p{
+    font-size: 24px;
+    color: #ffff;
+    text-align: left;
+}
