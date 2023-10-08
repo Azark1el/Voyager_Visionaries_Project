@@ -9,6 +9,7 @@ urlpatterns = [
     path('Data/', views.data, name = 'Data'),
     path('Explore/', views.explore, name = 'Explore'),
     path('Debris/', views.debris, name = 'Debris'),
+    path('Weather/', views.weather, name = 'Weather'),
 
     # redirect
 
@@ -16,4 +17,5 @@ urlpatterns = [
     path('About/', views.about_rdr, name='About'),
     path('Data/', views.data_rdr, name='Data'),
     path('Debris/', views.debris_rdr, name='Debris'),
+    path('Weather/', views.weather_rdr, name = 'Weather')
 ]

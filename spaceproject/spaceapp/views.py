@@ -14,6 +14,8 @@ def explore(request):
     return render(request, 'source.html')
 def debris(request):
     return render(request, 'spacedebris.html')
+def weather(request):
+    return render(request, 'spaceweather.html')
 #redirect functions
 def home_rdr(request):
     return redirect('/')
@@ -23,6 +25,8 @@ def data_rdr(request):
     return redirect('Data/')
 def debris_rdr(request):
     return redirect('Debris/')
+def weather_rdr(request):
+    return redirect('Weather/')
 def explore_rdr(request):
     return redirect('Explore/')
 
