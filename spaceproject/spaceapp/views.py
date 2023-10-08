@@ -12,6 +12,8 @@ def data(request):
     return render(request, 'data.html')
 def explore(request):
     return render(request, 'explore.html')
+def debris(request):
+    return render(request, 'spacedebris.html')
 #redirect functions
 def home_rdr(request):
     return redirect('/')
@@ -19,6 +21,9 @@ def about_rdr(request):
     return redirect('About/')
 def data_rdr(request):
     return redirect('Data/')
+def debris_rdr(request):
+    return redirect('Debris/')
 def explore_rdr(request):
     return redirect('Explore/')
+
 

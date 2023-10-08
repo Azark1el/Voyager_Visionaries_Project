@@ -8,9 +8,12 @@ urlpatterns = [
     path('More/', views.more, name = 'More'),
     path('Data/', views.data, name = 'Data'),
     path('Explore/', views.explore, name = 'Explore'),
+    path('Debris/', views.debris, name = 'Debris'),
 
     # redirect
 
     path('Home/', views.home_rdr, name='Home'),
-    path('About/', views.about_rdr, name='About')
+    path('About/', views.about_rdr, name='About'),
+    path('Data/', views.data_rdr, name='Data'),
+    path('Debris/', views.debris_rdr, name='Debris'),
 ]
