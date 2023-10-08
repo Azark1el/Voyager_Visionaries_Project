@@ -1,64 +1,31 @@
 *{
-    padding: 0;
-    margin: 0;
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+}
+.navbar {
+    background: crimson;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 0;
 }
 
-body{
-    font-family: 'Montserrat';
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
 }
-
-nav{
-    background: #000;
-    height: 80px;
-    width: 100%;
+.logo a{
+    font-size: 35px; font-weight: 600; color: white;
 }
-
-nav ul{
-    float: right;
-    margin-right: 20px;
+li{
+    list-style: none; display: inline-block;
 }
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+li a{
+    color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
 }
-
-nav ul li a{
-    color: #ffff;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+button{
+    background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
 }
-
-a.active,a:hover{
-    background: #14CC99;
-    transition: .5s;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: #ffff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-@media (max-width: 952px) {
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
+button a{
+    color: white; font-weight: bold; font-size: 15px;
 }
 
 .thirdheader{
@@ -72,7 +39,7 @@ a.active,a:hover{
 
 .header-text-box{
     color: #ffff;
-    margin: 50px;
+    margin: 0;
     width: 400px;
 }
 
