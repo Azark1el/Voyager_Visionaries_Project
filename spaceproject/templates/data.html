@@ -1,52 +1,52 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Visualization | Voyager Visionaries</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{% static 'data.css' %}">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    </head>
-
-    <body>
-        <section class="navbar">
-            <nav class="navbar">
-                <div class="navdiv">
-<<<<<<< HEAD:data.html
-                    <div class="logo"><a href="#"><img src="{% static 'images/logo.png' %}"></a></div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-=======
-                    <div class="logo"><a href="">CodingNinja</a> </div>
-                    <ul>
-                        <li><a href="{% url 'Home' %}">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <button><a href="">SignIn</a></button>
-                        <button><a href="">SignUp</a></button>
->>>>>>> 50b739a05e64aa32023a225dda0d5b5cf44a9e9a:spaceproject/templates/data.html
-                    </ul>
-                </div>
-            </nav>
-        </section>
-
-        <section class="thirdheader">
-            <div class="header-text-box">
-                <h1>About Us</h1>
-                <p>
-                    We are a team of 2 students from the Laurentian University (Canada) and HCMC University of Science (Vietnam). Our team is called Voyager Visionaries. We are passionate about space and we want to make space data more accessible to everyone by building a real time open source database that will be available to everyone. 
-                </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'data.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <section class="secondheader">
+        <nav>
+            <a href="{% url 'Home' %}"><img src="{% static 'images/logo.png' %}"></a>
+            <div class="second-nav-links">
+                <ul id="button">
+                    <li><a href="{% url 'Home' %}">HOME</a></li>
+                    <li><a href="{% url 'About' %}">ABOUT</a></li>
+                </ul>
             </div>
 
+        </nav>
+    
+    <div class="second-text-box">
+        <h1>About us</h1>
+        <p>
+            No longer need to read long technical documents cause you have already got evrything you need right here
+        </p>
+    </div>
+    </section>
+    <section class="intro">
+        <h1>Intro</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+    <div class="row">
+        <div class="para">
+            <a href="" class="para1">Space Weather</a>
+        </div>
+        <div class="para">
+            <a href="" class="para2">Space Debris</a>
+        </div>
+        <div class="para">
+            <a href="" class="para3">Asteroid</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+        <section class="footer">
+            <h3>About us</h3>
+            <p>This is the Beta Space Team project for The Space Apps Challenge Hackathon 2023</p>
         </section>
-
-        <section class="datatype">
-            <h1>Data Visualization</h1>
-            <p>Write something here</p>
-        </section>
-    </body>
+</body>
 </html>

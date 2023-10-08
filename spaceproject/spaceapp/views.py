@@ -13,8 +13,12 @@ def data(request):
 def explore(request):
     return render(request, 'explore.html')
 #redirect functions
-def aboutrdr(request):
-    return redirect('About/')
-def home(request):
+def home_rdr(request):
     return redirect('/')
+def about_rdr(request):
+    return redirect('About/')
+def data_rdr(request):
+    return redirect('Data/')
+def explore_rdr(request):
+    return redirect('Explore/')
 
