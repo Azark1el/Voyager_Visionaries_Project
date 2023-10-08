@@ -12,15 +12,15 @@
     background-position: left;
     background-size: cover;
     position: relative;
-    animation: fadeIn 2.5s ease;
+    animation: fadeIn 2.5s ease; /* Adjust the animation duration and timing function */
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0.5;
+        opacity: 0.5; /* Start with zero opacity */
     }
     to {
-        opacity: 1;
+        opacity: 1; /* End with full opacity */
     }
 }
 
@@ -101,6 +101,7 @@ nav img{
     font-size: 13px;
 }
 
+/* Create the inner border */
 .infobutton::before {
     content: '';
     position: absolute;
@@ -127,6 +128,7 @@ nav img{
     background-position: 100% 0; 
 }
 
+/* Intro */
 
 .intro {
     min-height: 100vh;
@@ -142,15 +144,15 @@ nav img{
     color: #ffffff;
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 5%; /* Adjust the left value to position it on the left side */
     transform: translateY(-50%);
     text-align: left;
 }
 
 .intro-text-box h2 {
     font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 600; /* Remove 'px' from font-weight */
+    margin-bottom: 10px; /* Add spacing below the heading */
 }
 
 .intro-text-box p {
@@ -175,15 +177,15 @@ nav img{
     color: #ffff;
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 5%; /* Adjust the left value to position it on the left side */
     transform: translateY(-50%);
     text-align: right;
 }
 
 .access-text-box h2 {
     font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 10px; 
+    font-weight: 600; /* Remove 'px' from font-weight */
+    margin-bottom: 10px; /* Add spacing below the heading */
 }
 
 .access-text-box p {
