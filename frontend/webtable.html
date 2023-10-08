@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedding Website with Top Cut, Scaling, and Disabled Scrolling</title>
+    <style>
+        /* Cut the top part of the embedded content */
+        iframe {
+            position: absolute;
+            top: -140px;
+            left: 0;
+            width: 100%;
+            height: 110%;
+            border: none;
+
+            /* Apply scaling transformation */
+            
+        }
+    </style>
+</head>
+<body>
+
+<iframe src="https://www.spaceweather.gc.ca/forecast-prevision/short-court/zone-en.php#tabular" 
+        width="100%" 
+        height="100%"
+        sandbox="allow-same-origin allow-scripts"
+        scrolling="no"></iframe>
+
+</body>
+</html>
