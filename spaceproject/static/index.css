@@ -200,23 +200,7 @@ nav img{
     color: #ffff;
 }
 
-.footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-    background-color: #000;
-}
 
-.footer h3 {
-    color: #ffff;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    font-weight: 600;
-}
-
-.footer p {
-    color: #ffff;
-}
 
 .ViewDataButton {
     display: inline-block;
@@ -300,3 +284,37 @@ nav img{
     background-position: 100% 0; 
 }
 
+.container {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.container section {
+    justify-content: center;
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #000;
+    height: 100px;
+}
+
+.footer h3 {
+    color: #ffff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.footer p {
+    color: #ffff;
+}
+
+#foot {
+    height: 100px;
+}
