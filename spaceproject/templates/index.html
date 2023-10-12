@@ -4,10 +4,17 @@
 <html>
     <head>
         <meta name="viewport" content="with=device-width, inital-scale=1.0">
-        <title>Home | Voyagers Visionary</title>
+<<<<<<< HEAD
+        <title> Home | Voyagers Visionary</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fnts.gstatic.com" crossorigin>
+=======
+        <title>Home | Beta Space</title>
         <link rel="stylesheet" href="{% static 'index.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+>>>>>>> 0a7704bf6c88dc78c9241aafee9b1ad7c7bb6f82
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -18,7 +25,7 @@
                 <div class="nav-links">
                     <ul>
                         <li><a href="{% url 'Home' %}">HOME</a></li>
-                        <li><a href="About">ABOUT</a></li>
+                        <li><a href="{% url 'About' %}">ABOUT</a></li>
                     </ul>
                 </div>
             </nav>

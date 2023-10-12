@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Manrope', sans-serif;
+}
+
+.secondheader{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/anotherbanner.png);
+    background-position: left;
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2.5s ease; /* Adjust the animation duration and timing function */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5; /* Start with zero opacity */
+    }
+    to {
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.second-nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.second-nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.second-nav-links ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.second-nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffff;
+    display: block;
+    margin: auto;
+    transition: 0.32s;
+}
+
+.second-nav-links ul li:hover:after {
+    width: 100%;
+}
+
+.second-text-box{
+    color: #ffff;
+    text-align: center;
+    margin-top: 100px;
+    height:120vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.intro {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.para p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 36px;
+}
+
+.para1 {
+    flex-basis: 31%;
+    background: url(images/wallpaperflare-cropped.jpg);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+    height: 250px;
+    width: 400px;
+    display: block;
+}
+
+.para2 {
+    flex-basis: 31%;
+    background: url(images/images-of-space-debris-696x392.png);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+    height: 250px;
+    width: 400px;
+    display: block;
+}
+
+.para3 {
+    flex-basis: 31%;
+    background: url(images/9123658.jpg);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+    height: 250px;
+    width: 400px;
+    display: block;
+}
+
+.para1:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
+}
+
+.para2:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
+}
+
+.para3:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #000;
+}
+
+.footer h3 {
+    color: #ffff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18.72px;
+    text-align: center;
+}
+
+.footer p {
+    color: #ffff;
+}
+
+.row a {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.button{
+    width: 10%;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.infobutton {
+    display:block;
+    padding: 12px 34px; 
+    border: 1px solid #ffff; 
+    text-align: center;
+    color: #ffff; 
+    text-decoration: none; 
+    background: transparent; 
+    overflow: hidden; 
+    font-size: 13px;
+}
+
+.infobutton::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px solid transparent; 
+    background-clip: content-box;
+    z-index: -1; 
+    transition: all 1s; 
+    transform: scaleX(0); 
+    background-position: -100% 0; 
+}
+
+.infobutton:hover {
+    background: transparent; 
+    overflow: visible; 
+}
+
+.infobutton:hover::before {
+    transform: scaleX(1); 
+    background-position: 100% 0;
+}
