@@ -18,7 +18,7 @@ app.layout = html.Div([
     html.Div([
         html.H1('NEA Data Heatmap', style={'textAlign': 'center'}),
         html.P('This app allows you to visualize the density of NEA data for two selected variables.',
-               style={'textAlign': 'center'}),
+            style={'textAlign': 'center'}),
         html.Div([
             html.Label('Select first variable'),
             dcc.Dropdown(
